@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+* {
+  font-family: Avenir-Roman, sans-serif;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    min-width: 541px;
+    max-width: 1000px;
+  }
+}
