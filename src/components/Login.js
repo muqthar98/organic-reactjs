@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
-import firebase from './firebase'
+import React from "react";
+import { Button, TextField } from "@material-ui/core";
 
-export default class Login extends Component {
-    
-    render() {
-        return (
-            <div>
-                <div id="recaptcha-container"/>
-              <label></label>
-              <button className="btn btn-md btn-primary">Click Me</button>
-            </div>
-        )
-    }
+export default function Login() {
+  return (
+    <div>
+      <TextField name="email" label="Standard" />
+      <Button variant="outlined">Login</Button>
+    </div>
+  );
 }
