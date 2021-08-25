@@ -1,0 +1,83 @@
+.header {
+  background-color: #ccffbd;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header_logo {
+  margin-left: 50px;
+  width: 50px;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.header_searchbox {
+  display: flex;
+  flex: 1;
+  margin-left: 80px;
+}
+
+.header_input {
+  width: 100%;
+  border: none;
+  height: 12px;
+  padding: 15px;
+}
+
+.header_search {
+  padding: 5px;
+  background-color: goldenrod;
+  height: 30px !important;
+}
+
+.links {
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.home:hover {
+  color: green;
+}
+
+.vegetable:hover {
+  color: green;
+}
+
+.fruits:hover {
+  color: green;
+}
+
+.daily:hover {
+  color: green;
+}
+
+.organic:hover {
+  color: green;
+}
+
+.contact:hover {
+  color: green;
+}
+
+.icons {
+  display: flex;
+  margin-left: 50px;
+}
+
+.cart {
+  margin-left: 20px;
+}
+
+.wishlist {
+  margin-left: 20px;
+}
+
+.logout {
+  margin-left: 20px;
+}
