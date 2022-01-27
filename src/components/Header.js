@@ -8,7 +8,7 @@ import {
   HeartOutlined,
   LogoutOutlined,
 } from "@ant-design/icons";
-import DarkModeToggle from "./darkMode/DarkMode";
+//import DarkModeToggle from "./darkMode/DarkMode";
 
 export default function Header() {
   return (
@@ -68,7 +68,7 @@ export default function Header() {
           <Link to="/signout">
             <LogoutOutlined className="logout" />
           </Link>
-          <DarkModeToggle />
+          {/* <DarkModeToggle /> */}
         </div>
       </div>
     </div>

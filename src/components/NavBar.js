@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NavBar.css";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import DarkModeToggle from "react-dark-mode-toggle";
+//import DarkModeToggle from "react-dark-mode-toggle";
 
 function NavBar() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  //const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
     <header>
@@ -64,12 +64,12 @@ function NavBar() {
                   ContactUs
                 </Nav.Link>
               </LinkContainer>
-              <p style={{ marginTop: "5px" }}>Light</p>
-              <DarkModeToggle
+              {/* <p style={{ marginTop: "5px" }}>Light</p> */}
+              {/* <DarkModeToggle
                 onChange={setIsDarkMode}
                 checked={isDarkMode}
                 size={80}
-              />
+              /> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
