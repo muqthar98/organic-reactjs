@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { LinkContainer } from "react-router-bootstrap";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 //import DarkModeToggle from "react-dark-mode-toggle";
 
 function NavBar() {
@@ -28,15 +28,12 @@ function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav">
-              <Button
-                className="btn btn-block bg-white"
-                style={{ color: "green", border: "white", marginRight: "50px" }}
-              >
-                Login
-              </Button>
               <LinkContainer to="/">
                 <Nav.Link>
-                  <i className="fas fa-home" style={{ marginRight: "5px" }}></i>
+                <i
+                    className="fas fa-home"
+                    style={{ marginRight: "5px" }}
+                  ></i>
                   Home
                 </Nav.Link>
               </LinkContainer>

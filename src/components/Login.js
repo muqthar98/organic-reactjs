@@ -1,7 +1,8 @@
 import React,{useState} from "react";
 import { Button } from "react-bootstrap";
 import { Container, TextField } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+import { useHistory,Link } from "react-router-dom";
+import './Login.css'
 
 export default function Login() {
 
@@ -17,21 +18,27 @@ export default function Login() {
 
   return (
     <div>
-      <h2 style={{ marginTop: "10px" }}>Login</h2>
+      <h2 style={{ marginTop: "10px",marginBottom:'20px' }}>Login</h2>
       <Container>
-        <TextField style={{ marginTop: "20px" }} name="email" label="Email" value={email} onChange={e=>setEmail(e.target.value)}/>
+      <TextField name="email" label="Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
         <div />
         <TextField
           style={{ marginTop: "20px" }}
           name="password"
-          label="Password"
+          label="Password"  
           value={password}
           onChange={e=>setPassword(e.target.value)}
         />
-        <div />
-        <Button onCLick={login} className="btn btn-dark mt-2 mb-5" variant="outlined">
+        <div>
+        <Button onClick={login} className="btn btn-dark mt-3" style={{marginTop:'-10px'}} variant="outlined">
           Login
         </Button>
+        <p>or</p>
+        </div>
+        <div>
+        <p style={{marginTop:"-15px"}}>Create a new account</p>
+        <Link to="/signup"><Button className="btn btn-dark mb-2">SignUp</Button></Link>
+        </div>
       </Container>
     </div>
   );

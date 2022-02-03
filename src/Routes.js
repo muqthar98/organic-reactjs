@@ -12,6 +12,7 @@ import Product from "./components/Product";
 import Contact from "./components/Contact";
 import ProductDetail from "./components/ProductDetail";
 import SideNav from "./components/SideNav/SideNav";
+import Signup from "./components/Signup";
 
 function Routes() {
   return (
@@ -35,6 +36,9 @@ function Routes() {
           <Route path="/cart">
             <h2>Cart</h2>
           <SideNav/>
+          </Route>
+          <Route path="/signup">
+            <Signup/>
           </Route>
           <Route path="/login">
             <Login />
